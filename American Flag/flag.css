@@ -1,0 +1,47 @@
+body {
+    text-align: center;
+    font-size: 35px;
+}
+
+table.flag {
+    /* border-collapse removes extra spacing between table cells so all stripes and borders touch cleanly so no gaps or double borders*/
+ border-collapse: collapse;
+ margin: 20px auto;
+ width: 600px;
+ height: calc(600px * 0.5385);
+ border: 2px solid black;
+ /* divides the columns evenly based only on width value*/
+ table-layout: fixed;
+
+
+
+}
+
+/* red stripes*/
+.red {
+    background-color: rgb(207, 34, 34);
+    height: calc(100%/13); /* flag height is 100% divide it by 13 makes sure each stripe gets 1/13th of the height*/
+}
+
+.white {
+    background-color: white;
+    height: calc(100%/13);
+}
+
+.blue {
+    background-color: #3c3b6e;
+    width: 40%;
+    height: calc(7 / 13 * 100%); /* this makes sure the stripes are evenly sized*/
+    position: relative;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.stars-img {
+    /*h/w the same ; tells the image to completely fills the blue cannon both horizontally and vertically so no empty spaces*/
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* this is what is making sure my image is scaled proportionally and not stretched */
+    display: block;
+}

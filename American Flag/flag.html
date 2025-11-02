@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="flag.css">
+    <title>American Flag</title>
+</head>
+<body>
+    <h2> My American Flag</h2>
+<!-- table makes it easier to divide the flag into rows and columns-->
+    <table class="flag">
+
+<!-- first 7 strips-->
+<!-- tr = stripes-->
+<tr>
+    <!--this ensures star portion only covers 7 stripes vertically-->
+    <td rowspan="7" class="blue">
+        <img src="stars.png" alt="Star section" class="stars-img">
+    </td>
+    <td class="red"></td>
+</tr>
+<!-- td is a cell inside the row (tr)-->
+<tr><td class="white"></td></tr>
+<tr><td class="red"></td></tr>
+<tr><td class="white"></td></tr>
+<tr><td class="red"></td></tr>
+<tr><td class="white"></td></tr>
+<tr><td class="red"></td></tr>
+
+<!-- remaining 6 stripes-->
+ <!--bottom stripes makes sure they go across the entire flag/ both columns -->
+<tr><td colspan="2" class="white"></td></tr>
+<tr><td colspan="2" class="red"></td></tr>
+<tr><td colspan="2" class="white"></td></tr>
+<tr><td colspan="2" class="red"></td></tr>
+<tr><td colspan="2" class="white"></td></tr>
+<tr><td colspan="2" class="red"></td></tr>
+</table>
+
+</body>
+<footer> Thank you for visiting my American Flag</footer>
+</html>
